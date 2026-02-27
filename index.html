@@ -9,7 +9,6 @@
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'IBM Plex Mono', monospace; background: #0a0a0a; color: #c8c8c8; font-size: 12px; min-height: 100vh; }
-
   #topbar { background: #cc0000; padding: 5px 14px; display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #ff0000; flex-wrap: wrap; }
   .logo { color: #fff; font-weight: 700; font-size: 13px; letter-spacing: 2px; }
   #tickerInput { background: #000; color: #ffcc00; border: 1px solid #ff4400; padding: 3px 8px; font-family: inherit; font-size: 13px; width: 110px; text-transform: uppercase; outline: none; }
@@ -18,48 +17,40 @@
   #clock { color: #ffcc00; font-size: 11px; margin-left: auto; }
   #exportBtn { background: #004400; color: #00ff88; border: 1px solid #00ff88; padding: 3px 10px; cursor: pointer; font-family: inherit; font-size: 10px; font-weight: bold; display: none; }
   #exportBtn:hover { background: #006600; }
-
   #quoteBar { background: #111; border-bottom: 1px solid #333; padding: 7px 14px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; min-height: 46px; }
   .qticker { color: #ffcc00; font-size: 16px; font-weight: bold; }
   .qprice { color: #fff; font-size: 20px; font-weight: bold; }
   .pos { color: #00ff88; } .neg { color: #ff4466; } .yellow { color: #ffcc00; }
   .qmeta span { color: #aaa; margin-right: 12px; font-size: 11px; }
   .qmeta span b { color: #fff; }
-
   #tabs { background: #0f0f0f; border-bottom: 1px solid #333; display: flex; overflow-x: auto; }
   .tab { background: transparent; color: #888; border: none; border-right: 1px solid #222; padding: 7px 14px; cursor: pointer; font-family: inherit; font-size: 11px; font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
   .tab.active { background: #cc0000; color: #fff; }
   .tab:hover:not(.active) { background: #1a1a1a; color: #ccc; }
-
   #content { padding: 14px; }
   .loading { color: #ffcc00; text-align: center; padding: 60px; font-size: 14px; }
   .error { color: #ff4466; padding: 20px; line-height: 1.8; }
-
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .sec { margin-bottom: 16px; }
   .sec-title { background: #1a1a1a; border-left: 3px solid #cc0000; padding: 3px 8px; color: #ffcc00; font-size: 11px; font-weight: bold; letter-spacing: 1px; margin-bottom: 8px; }
   .row { display: flex; justify-content: space-between; padding: 3px 2px; border-bottom: 1px solid #141414; align-items: center; }
   .row .lbl { color: #666; }
   .row .val { color: #fff; font-weight: 600; }
-
   .score-badge { display: inline-block; padding: 1px 6px; border-radius: 2px; font-size: 10px; font-weight: bold; margin-left: 6px; }
   .score-green { background: #003300; color: #00ff88; border: 1px solid #00ff88; }
   .score-yellow { background: #333300; color: #ffcc00; border: 1px solid #ffcc00; }
   .score-red { background: #330000; color: #ff4466; border: 1px solid #ff4466; }
-
   table { width: 100%; border-collapse: collapse; font-size: 11px; }
   th { color: #ffcc00; padding: 4px 8px; text-align: right; border-bottom: 1px solid #333; font-weight: 600; font-size: 10px; }
   th:first-child { text-align: left; }
   td { padding: 3px 8px; border-bottom: 1px solid #141414; color: #fff; text-align: right; }
   td:first-child { text-align: left; color: #777; font-size: 11px; }
   tr:hover td { background: #111; }
-
   .news-item { border-bottom: 1px solid #1a1a1a; padding: 8px 0; display: flex; gap: 10px; }
   .news-date { color: #555; min-width: 80px; font-size: 10px; padding-top: 2px; }
   .news-body a { color: #ffcc00; text-decoration: none; font-size: 12px; display: block; margin-bottom: 2px; }
   .news-body a:hover { color: #fff; }
   .news-meta { color: #555; font-size: 10px; }
-
   .dcf-box { background: #111; border: 1px solid #333; padding: 14px; margin-bottom: 12px; }
   .dcf-input { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
   .dcf-input label { color: #888; font-size: 11px; min-width: 200px; }
@@ -67,22 +58,18 @@
   .dcf-result { background: #0a1a0a; border: 1px solid #00ff88; padding: 14px; margin-top: 12px; }
   .dcf-result .fair-value { color: #00ff88; font-size: 24px; font-weight: bold; }
   #calcDCF { background: #cc0000; color: #fff; border: none; padding: 6px 16px; cursor: pointer; font-family: inherit; font-size: 11px; font-weight: bold; margin-top: 8px; }
-
   .pt-item { border-bottom: 1px solid #1a1a1a; padding: 5px 2px; display: flex; justify-content: space-between; align-items: center; }
   .pt-firm { color: #aaa; font-size: 11px; }
   .pt-action { font-size: 10px; padding: 1px 6px; border-radius: 2px; }
   .pt-buy { background: #003300; color: #00ff88; }
   .pt-hold { background: #333300; color: #ffcc00; }
   .pt-sell { background: #330000; color: #ff4466; }
-
   .company-desc { color: #b0b0b0; line-height: 1.7; font-size: 11px; }
   .note { color: #444; font-size: 10px; margin-top: 6px; font-style: italic; }
-
   @media(max-width:700px){ .grid2{grid-template-columns:1fr;} .qmeta{display:none;} }
 </style>
 </head>
 <body>
-
 <div id="topbar">
   <span class="logo">▶ BLOOMBERG TERMINAL</span>
   <input type="text" id="tickerInput" value="AAPL" placeholder="TICKER" />
@@ -90,9 +77,7 @@
   <button id="exportBtn" onclick="exportExcel()">⬇ EXPORT EXCEL</button>
   <span id="clock"></span>
 </div>
-
 <div id="quoteBar"><span style="color:#444">Enter a ticker and press GO</span></div>
-
 <div id="tabs">
   <button class="tab active" onclick="switchTab('overview',this)">[1] OVERVIEW</button>
   <button class="tab" onclick="switchTab('ratios',this)">[2] RATIOS</button>
@@ -101,18 +86,14 @@
   <button class="tab" onclick="switchTab('targets',this)">[5] PRICE TARGETS</button>
   <button class="tab" onclick="switchTab('news',this)">[6] NEWS</button>
 </div>
-
 <div id="content"><div class="loading">⟳ Enter a ticker above and press GO</div></div>
 
 <script>
-const PROXY = url => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-const YF = path => `https://query1.finance.yahoo.com/${path}`;
-
 let STATE = {};
 let currentTab = "overview";
 
 const fmtN = (n,d=2) => { const x=parseFloat(n); return isNaN(x)||n==null?"N/A":x.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d}); };
-const fmtB = n => { const x=parseFloat(n); if(isNaN(x)||n==null) return "N/A"; const a=Math.abs(x); if(a>=1e12) return (x/1e12).toFixed(2)+"T"; if(a>=1e9) return (x/1e9).toFixed(2)+"B"; if(a>=1e6) return (x/1e6).toFixed(2)+"M"; if(a>=1e3) return (x/1e3).toFixed(2)+"K"; return fmtN(x); };
+const fmtB = n => { const x=parseFloat(n); if(isNaN(x)||n==null) return "N/A"; const a=Math.abs(x); if(a>=1e12) return (x/1e12).toFixed(2)+"T"; if(a>=1e9) return (x/1e9).toFixed(2)+"B"; if(a>=1e6) return (x/1e6).toFixed(2)+"M"; return fmtN(x); };
 const fmtP = n => { const x=parseFloat(n); return isNaN(x)?"N/A":(x>=0?"+":"")+x.toFixed(2)+"%"; };
 const fmtPct = n => { const x=parseFloat(n); return isNaN(x)?"N/A":x.toFixed(2)+"%"; };
 const clr = n => parseFloat(n)>0?"pos":parseFloat(n)<0?"neg":"";
@@ -122,58 +103,44 @@ function tick(){ document.getElementById("clock").textContent=new Date().toLocal
 setInterval(tick,1000); tick();
 document.getElementById("tickerInput").addEventListener("keydown",e=>{ if(e.key==="Enter") loadTicker(); });
 
-async function yfFetch(path){
-  try{
-    const r = await fetch(PROXY(YF(path)));
-    const j = await r.json();
-    return JSON.parse(j.contents);
-  }catch(e){ return null; }
-}
-
 async function loadTicker(){
   const sym = document.getElementById("tickerInput").value.toUpperCase().trim();
   if(!sym) return;
-  document.getElementById("content").innerHTML=`<div class="loading">⟳ Fetching ${sym} from Yahoo Finance...</div>`;
+  document.getElementById("content").innerHTML=`<div class="loading">⟳ Fetching ${sym}...</div>`;
   document.getElementById("quoteBar").innerHTML=`<span style="color:#555">Loading ${sym}...</span>`;
   document.getElementById("exportBtn").style.display="none";
 
   try{
-    const modules = "price,summaryDetail,defaultKeyStatistics,financialData,earningsTrend,recommendationTrend,upgradeDowngradeHistory,assetProfile,incomeStatementHistory,balanceSheetHistory,cashflowStatementHistory";
-    const [summary, newsData] = await Promise.all([
-      yfFetch(`v10/finance/quoteSummary/${sym}?modules=${modules}`),
-      yfFetch(`v1/finance/search?q=${sym}&newsCount=10`),
-    ]);
+    const res = await fetch(`/api/quote?symbol=${sym}`);
+    const data = await res.json();
+    if(data.error) throw new Error(data.error);
 
-    const result = summary?.quoteSummary?.result?.[0];
-    if(!result){ document.getElementById("content").innerHTML=`<div class="error">Ticker "${sym}" not found. Try a US ticker like AAPL, MSFT, NVDA, TSLA.</div>`; return; }
+    const result = data.summary?.quoteSummary?.result?.[0];
+    if(!result) throw new Error(`Ticker "${sym}" not found.`);
 
-    STATE = { sym, result, newsData };
+    STATE = { sym, result, newsData: data.news };
     renderQuoteBar();
     renderTab(currentTab);
     document.getElementById("exportBtn").style.display="inline-block";
   }catch(e){
-    document.getElementById("content").innerHTML=`<div class="error">Error: ${e.message}<br><br>If data isn't loading, the Yahoo Finance proxy may be temporarily unavailable. Try again in a moment.</div>`;
+    document.getElementById("content").innerHTML=`<div class="error">Error: ${e.message}</div>`;
   }
 }
 
 function renderQuoteBar(){
-  const p = STATE.result.price||{};
-  const fd = STATE.result.financialData||{};
-  const price = v(p.regularMarketPrice);
-  const chg = v(p.regularMarketChange);
-  const chgPct = v(p.regularMarketChangePercent)*100;
+  const p=STATE.result.price||{}, fd=STATE.result.financialData||{}, sd=STATE.result.summaryDetail||{};
+  const price=v(p.regularMarketPrice), chg=v(p.regularMarketChange), chgPct=(v(p.regularMarketChangePercent)||0)*100;
   document.getElementById("quoteBar").innerHTML=`
     <div><span class="qticker">${p.symbol||STATE.sym}</span><span style="color:#555;font-size:10px;margin-left:6px">${p.exchangeName||""}</span></div>
     <div class="qprice">$${fmtN(price)}</div>
-    <div class="${clr(chg)}">${chg>=0?"▲":"▼"} ${fmtN(Math.abs(chg))} (${fmtN(Math.abs(chgPct))}%)</div>
+    <div class="${clr(chg)}">${(chg||0)>=0?"▲":"▼"} ${fmtN(Math.abs(chg||0))} (${fmtN(Math.abs(chgPct))}%)</div>
     <div class="qmeta">
       <span>52W H: <b class="pos">$${fmtN(v(p.fiftyTwoWeekHigh))}</b></span>
       <span>52W L: <b class="neg">$${fmtN(v(p.fiftyTwoWeekLow))}</b></span>
       <span>Mkt Cap: <b>${fmtB(v(p.marketCap))}</b></span>
-      <span>P/E: <b>${fmtN(v(STATE.result.summaryDetail?.trailingPE))}</b></span>
+      <span>P/E: <b>${fmtN(v(sd.trailingPE))}</b></span>
       <span>Target: <b class="yellow">$${fmtN(v(fd.targetMeanPrice))}</b></span>
-    </div>
-  `;
+    </div>`;
 }
 
 function switchTab(tab,btn){
@@ -187,341 +154,279 @@ function renderTab(tab){
   document.getElementById("content").innerHTML=fns[tab]?fns[tab]():"";
 }
 
-const sec=(title,inner)=>`<div class="sec"><div class="sec-title">${title}</div>${inner}</div>`;
+const sec=(t,i)=>`<div class="sec"><div class="sec-title">${t}</div>${i}</div>`;
 const row=(label,val,cls="",hint="")=>{
-  const badge=hint?`<span class="score-badge score-${hint}">${hint==="green"?"✓":hint==="red"?"✗":"~"}</span>`:"";
-  return `<div class="row"><span class="lbl">${label}</span><span class="val ${cls}">${val}${badge}</span></div>`;
+  const b=hint?`<span class="score-badge score-${hint}">${hint==="green"?"✓":hint==="red"?"✗":"~"}</span>`:"";
+  return `<div class="row"><span class="lbl">${label}</span><span class="val ${cls}">${val}${b}</span></div>`;
 };
 const sm=(val,g,ok)=>{ const x=parseFloat(val); return isNaN(x)?"":x>=g?"green":x>=ok?"yellow":"red"; };
 const sr=(val,g,ok)=>{ const x=parseFloat(val); return isNaN(x)?"":x<=g?"green":x<=ok?"yellow":"red"; };
 
 function renderOverview(){
-  const pr = STATE.result.price||{};
-  const sd = STATE.result.summaryDetail||{};
-  const fd = STATE.result.financialData||{};
-  const ks = STATE.result.defaultKeyStatistics||{};
-  const ap = STATE.result.assetProfile||{};
-
-  return `<div class="grid2">
-    <div>
-      ${sec("COMPANY",`
-        <div style="color:#ffcc00;font-size:14px;font-weight:bold;margin-bottom:4px">${v(pr.longName)||STATE.sym}</div>
-        <div style="color:#888;font-size:11px;margin-bottom:8px">${ap.sector||""} | ${ap.industry||""}</div>
-        <div class="company-desc">${(ap.longBusinessSummary||"N/A").slice(0,480)}${(ap.longBusinessSummary||"").length>480?"...":""}</div>
-      `)}
-      ${sec("PRICE DATA",`
-        ${row("Current Price","$"+fmtN(v(pr.regularMarketPrice)),"yellow")}
-        ${row("52W High","$"+fmtN(v(pr.fiftyTwoWeekHigh)),"pos")}
-        ${row("52W Low","$"+fmtN(v(pr.fiftyTwoWeekLow)),"neg")}
-        ${row("50D MA","$"+fmtN(v(sd.fiftyDayAverage)))}
-        ${row("200D MA","$"+fmtN(v(sd.twoHundredDayAverage)))}
-        ${row("Beta",fmtN(v(sd.beta)))}
-        ${row("Volume",fmtB(v(pr.regularMarketVolume)))}
-        ${row("Avg Volume",fmtB(v(sd.averageVolume)))}
-      `)}
-    </div>
-    <div>
-      ${sec("VALUATION",`
-        ${row("P/E (TTM)",fmtN(v(sd.trailingPE)))}
-        ${row("Forward P/E",fmtN(v(sd.forwardPE)))}
-        ${row("P/S (TTM)",fmtN(v(ks.priceToSalesTrailing12Months)))}
-        ${row("P/B",fmtN(v(ks.priceToBook)))}
-        ${row("EV/EBITDA",fmtN(v(ks.enterpriseToEbitda)))}
-        ${row("EV/Revenue",fmtN(v(ks.enterpriseToRevenue)))}
-        ${row("PEG",fmtN(v(ks.pegRatio)))}
-      `)}
-      ${sec("KEY FUNDAMENTALS",`
-        ${row("Revenue (TTM)",fmtB(v(fd.totalRevenue)))}
-        ${row("Gross Profit",fmtB(v(fd.grossProfits)))}
-        ${row("EBITDA",fmtB(v(fd.ebitda)))}
-        ${row("Free Cash Flow",fmtB(v(fd.freeCashflow)))}
-        ${row("EPS (TTM)","$"+fmtN(v(ks.trailingEps)))}
-        ${row("Dividend Yield",fmtPct(v(sd.dividendYield)*100))}
-        ${row("Mkt Cap",fmtB(v(pr.marketCap)))}
-      `)}
-    </div>
-  </div>`;
+  const pr=STATE.result.price||{}, sd=STATE.result.summaryDetail||{}, fd=STATE.result.financialData||{};
+  const ks=STATE.result.defaultKeyStatistics||{}, ap=STATE.result.assetProfile||{};
+  return `<div class="grid2"><div>
+    ${sec("COMPANY",`
+      <div style="color:#ffcc00;font-size:14px;font-weight:bold;margin-bottom:4px">${v(pr.longName)||STATE.sym}</div>
+      <div style="color:#888;font-size:11px;margin-bottom:8px">${ap.sector||""} | ${ap.industry||""}</div>
+      <div class="company-desc">${(ap.longBusinessSummary||"N/A").slice(0,480)}${(ap.longBusinessSummary||"").length>480?"...":""}</div>
+    `)}
+    ${sec("PRICE DATA",`
+      ${row("Current Price","$"+fmtN(v(pr.regularMarketPrice)),"yellow")}
+      ${row("52W High","$"+fmtN(v(pr.fiftyTwoWeekHigh)),"pos")}
+      ${row("52W Low","$"+fmtN(v(pr.fiftyTwoWeekLow)),"neg")}
+      ${row("50D MA","$"+fmtN(v(sd.fiftyDayAverage)))}
+      ${row("200D MA","$"+fmtN(v(sd.twoHundredDayAverage)))}
+      ${row("Beta",fmtN(v(sd.beta)))}
+      ${row("Avg Volume",fmtB(v(sd.averageVolume)))}
+    `)}
+  </div><div>
+    ${sec("VALUATION",`
+      ${row("P/E (TTM)",fmtN(v(sd.trailingPE)))}
+      ${row("Forward P/E",fmtN(v(sd.forwardPE)))}
+      ${row("P/S (TTM)",fmtN(v(ks.priceToSalesTrailing12Months)))}
+      ${row("P/B",fmtN(v(ks.priceToBook)))}
+      ${row("EV/EBITDA",fmtN(v(ks.enterpriseToEbitda)))}
+      ${row("PEG",fmtN(v(ks.pegRatio)))}
+    `)}
+    ${sec("KEY FUNDAMENTALS",`
+      ${row("Revenue (TTM)",fmtB(v(fd.totalRevenue)))}
+      ${row("Gross Profit",fmtB(v(fd.grossProfits)))}
+      ${row("EBITDA",fmtB(v(fd.ebitda)))}
+      ${row("Free Cash Flow",fmtB(v(fd.freeCashflow)))}
+      ${row("EPS (TTM)","$"+fmtN(v(ks.trailingEps)))}
+      ${row("Dividend Yield",fmtPct((v(sd.dividendYield)||0)*100))}
+      ${row("Mkt Cap",fmtB(v(pr.marketCap)))}
+    `)}
+  </div></div>`;
 }
 
 function renderRatios(){
-  const fd = STATE.result.financialData||{};
-  const sd = STATE.result.summaryDetail||{};
-  const ks = STATE.result.defaultKeyStatistics||{};
-  const pr = STATE.result.price||{};
-
-  const opM = v(fd.operatingMargins);
-  const prM = v(fd.profitMargins);
-  const grM = v(fd.grossMargins);
-  const roe = v(fd.returnOnEquity);
-  const roa = v(fd.returnOnAssets);
-
-  return `<div class="grid2">
-    <div>
-      ${sec("PROFITABILITY",`
-        ${row("Gross Margin",fmtPct((grM||0)*100),"",sm(grM,0.4,0.2))}
-        ${row("Operating Margin",fmtPct((opM||0)*100),"",sm(opM,0.2,0.1))}
-        ${row("Net Margin",fmtPct((prM||0)*100),"",sm(prM,0.15,0.05))}
-        ${row("ROE",fmtPct((roe||0)*100),"",sm(roe,0.15,0.08))}
-        ${row("ROA",fmtPct((roa||0)*100),"",sm(roa,0.1,0.05))}
-        ${row("Revenue Growth YoY",fmtP((v(fd.revenueGrowth)||0)*100),"",sm(v(fd.revenueGrowth),0.15,0.05))}
-        ${row("Earnings Growth YoY",fmtP((v(fd.earningsGrowth)||0)*100),"",sm(v(fd.earningsGrowth),0.15,0.05))}
-      `)}
-      ${sec("DIVIDENDS",`
-        ${row("Dividend/Share","$"+fmtN(v(sd.dividendRate)))}
-        ${row("Dividend Yield",fmtPct((v(sd.dividendYield)||0)*100))}
-        ${row("Ex-Dividend Date",sd.exDividendDate?new Date(v(sd.exDividendDate)*1000).toISOString().slice(0,10):"N/A")}
-        ${row("Payout Ratio",fmtPct((v(sd.payoutRatio)||0)*100))}
-        ${row("5Y Avg Yield",fmtPct((v(sd.fiveYearAvgDividendYield)||0)))}
-      `)}
-    </div>
-    <div>
-      ${sec("VALUATION RATIOS",`
-        ${row("P/E (TTM)",fmtN(v(sd.trailingPE)),"",sr(v(sd.trailingPE),15,25))}
-        ${row("Forward P/E",fmtN(v(sd.forwardPE)),"",sr(v(sd.forwardPE),15,25))}
-        ${row("P/S (TTM)",fmtN(v(ks.priceToSalesTrailing12Months)),"",sr(v(ks.priceToSalesTrailing12Months),2,5))}
-        ${row("P/B",fmtN(v(ks.priceToBook)),"",sr(v(ks.priceToBook),1,3))}
-        ${row("EV/EBITDA",fmtN(v(ks.enterpriseToEbitda)),"",sr(v(ks.enterpriseToEbitda),10,20))}
-        ${row("PEG",fmtN(v(ks.pegRatio)),"",sr(v(ks.pegRatio),1,2))}
-      `)}
-      ${sec("LIQUIDITY & LEVERAGE",`
-        ${row("Current Ratio",fmtN(v(fd.currentRatio)),"",sm(v(fd.currentRatio),1.5,1))}
-        ${row("Quick Ratio",fmtN(v(fd.quickRatio)),"",sm(v(fd.quickRatio),1,0.7))}
-        ${row("Debt/Equity",fmtN(v(fd.debtToEquity)),"",sr(v(fd.debtToEquity),50,100))}
-        ${row("Total Debt",fmtB(v(fd.totalDebt)))}
-        ${row("Total Cash",fmtB(v(fd.totalCash)))}
-        ${row("Cash/Share","$"+fmtN(v(fd.totalCashPerShare)))}
-      `)}
-    </div>
-  </div>
-  <p class="note">✓ Strong / ~ Acceptable / ✗ Weak — general market benchmarks. Not investment advice.</p>`;
+  const fd=STATE.result.financialData||{}, sd=STATE.result.summaryDetail||{}, ks=STATE.result.defaultKeyStatistics||{};
+  const grM=v(fd.grossMargins), opM=v(fd.operatingMargins), prM=v(fd.profitMargins);
+  const roe=v(fd.returnOnEquity), roa=v(fd.returnOnAssets);
+  return `<div class="grid2"><div>
+    ${sec("PROFITABILITY",`
+      ${row("Gross Margin",fmtPct((grM||0)*100),"",sm(grM,0.4,0.2))}
+      ${row("Operating Margin",fmtPct((opM||0)*100),"",sm(opM,0.2,0.1))}
+      ${row("Net Margin",fmtPct((prM||0)*100),"",sm(prM,0.15,0.05))}
+      ${row("ROE",fmtPct((roe||0)*100),"",sm(roe,0.15,0.08))}
+      ${row("ROA",fmtPct((roa||0)*100),"",sm(roa,0.1,0.05))}
+      ${row("Revenue Growth YoY",fmtP((v(fd.revenueGrowth)||0)*100),"",sm(v(fd.revenueGrowth),0.15,0.05))}
+      ${row("Earnings Growth YoY",fmtP((v(fd.earningsGrowth)||0)*100),"",sm(v(fd.earningsGrowth),0.15,0.05))}
+    `)}
+    ${sec("DIVIDENDS",`
+      ${row("Dividend/Share","$"+fmtN(v(sd.dividendRate)))}
+      ${row("Dividend Yield",fmtPct((v(sd.dividendYield)||0)*100))}
+      ${row("Payout Ratio",fmtPct((v(sd.payoutRatio)||0)*100))}
+      ${row("Ex-Div Date",sd.exDividendDate?new Date(v(sd.exDividendDate)*1000).toISOString().slice(0,10):"N/A")}
+    `)}
+  </div><div>
+    ${sec("VALUATION RATIOS",`
+      ${row("P/E (TTM)",fmtN(v(sd.trailingPE)),"",sr(v(sd.trailingPE),15,25))}
+      ${row("Forward P/E",fmtN(v(sd.forwardPE)),"",sr(v(sd.forwardPE),15,25))}
+      ${row("P/S (TTM)",fmtN(v(ks.priceToSalesTrailing12Months)),"",sr(v(ks.priceToSalesTrailing12Months),2,5))}
+      ${row("P/B",fmtN(v(ks.priceToBook)),"",sr(v(ks.priceToBook),1,3))}
+      ${row("EV/EBITDA",fmtN(v(ks.enterpriseToEbitda)),"",sr(v(ks.enterpriseToEbitda),10,20))}
+      ${row("PEG",fmtN(v(ks.pegRatio)),"",sr(v(ks.pegRatio),1,2))}
+    `)}
+    ${sec("LIQUIDITY & LEVERAGE",`
+      ${row("Current Ratio",fmtN(v(fd.currentRatio)),"",sm(v(fd.currentRatio),1.5,1))}
+      ${row("Quick Ratio",fmtN(v(fd.quickRatio)),"",sm(v(fd.quickRatio),1,0.7))}
+      ${row("Debt/Equity",fmtN(v(fd.debtToEquity)),"",sr(v(fd.debtToEquity),50,100))}
+      ${row("Total Debt",fmtB(v(fd.totalDebt)))}
+      ${row("Total Cash",fmtB(v(fd.totalCash)))}
+      ${row("Cash/Share","$"+fmtN(v(fd.totalCashPerShare)))}
+    `)}
+  </div></div>
+  <p class="note">✓ Strong / ~ Acceptable / ✗ Weak — general benchmarks. Not investment advice.</p>`;
 }
 
 function renderFinancials(){
-  const inc = STATE.result.incomeStatementHistory?.incomeStatementHistory||[];
-  const bal = STATE.result.balanceSheetHistory?.balanceSheetStatements||[];
-  const cf  = STATE.result.cashflowStatementHistory?.cashflowStatements||[];
-
-  const th = rows => rows.slice(0,4).map(r=>`<th>${(r.endDate?.fmt||"").slice(0,4)}</th>`).join("");
-  const tr = (label,key,rows) => `<tr><td>${label}</td>${rows.slice(0,4).map(r=>`<td>${fmtB(v(r[key]))}</td>`).join("")}</tr>`;
-
+  const inc=STATE.result.incomeStatementHistory?.incomeStatementHistory||[];
+  const bal=STATE.result.balanceSheetHistory?.balanceSheetStatements||[];
+  const cf=STATE.result.cashflowStatementHistory?.cashflowStatements||[];
+  const th=rows=>rows.slice(0,4).map(r=>`<th>${(r.endDate?.fmt||"").slice(0,4)}</th>`).join("");
+  const tr=(label,key,rows)=>`<tr><td>${label}</td>${rows.slice(0,4).map(r=>`<td>${fmtB(v(r[key]))}</td>`).join("")}</tr>`;
   return `
-    ${sec("INCOME STATEMENT — Annual (USD)",`<table>
-      <thead><tr><th>Metric</th>${th(inc)}</tr></thead><tbody>
+    ${sec("INCOME STATEMENT — Annual (USD)",`<table><thead><tr><th>Metric</th>${th(inc)}</tr></thead><tbody>
       ${tr("Total Revenue","totalRevenue",inc)}
       ${tr("Cost of Revenue","costOfRevenue",inc)}
       ${tr("Gross Profit","grossProfit",inc)}
-      ${tr("R&D Expense","researchDevelopment",inc)}
+      ${tr("R&D","researchDevelopment",inc)}
       ${tr("Operating Income","operatingIncome",inc)}
       ${tr("EBITDA","ebitda",inc)}
       ${tr("Net Income","netIncome",inc)}
       ${tr("EPS Diluted","dilutedEPS",inc)}
-      </tbody></table>`)}
-    ${sec("BALANCE SHEET — Annual (USD)",`<table>
-      <thead><tr><th>Metric</th>${th(bal)}</tr></thead><tbody>
+    </tbody></table>`)}
+    ${sec("BALANCE SHEET — Annual (USD)",`<table><thead><tr><th>Metric</th>${th(bal)}</tr></thead><tbody>
       ${tr("Total Assets","totalAssets",bal)}
       ${tr("Total Liabilities","totalLiab",bal)}
       ${tr("Stockholder Equity","totalStockholderEquity",bal)}
       ${tr("Cash & Equiv","cash",bal)}
-      ${tr("Short-term Investments","shortTermInvestments",bal)}
       ${tr("Total Debt","shortLongTermDebt",bal)}
       ${tr("Retained Earnings","retainedEarnings",bal)}
-      </tbody></table>`)}
-    ${sec("CASH FLOW — Annual (USD)",`<table>
-      <thead><tr><th>Metric</th>${th(cf)}</tr></thead><tbody>
+    </tbody></table>`)}
+    ${sec("CASH FLOW — Annual (USD)",`<table><thead><tr><th>Metric</th>${th(cf)}</tr></thead><tbody>
       ${tr("Operating CF","totalCashFromOperatingActivities",cf)}
       ${tr("Capex","capitalExpenditures",cf)}
       ${tr("Free Cash Flow","freeCashFlow",cf)}
       ${tr("Dividends Paid","dividendsPaid",cf)}
       ${tr("Stock Buybacks","repurchaseOfStock",cf)}
-      ${tr("Net Borrowings","netBorrowings",cf)}
-      </tbody></table>`)}
-  `;
+    </tbody></table>`)}`;
 }
 
 function renderDCF(){
-  const ks = STATE.result.defaultKeyStatistics||{};
-  const et = STATE.result.earningsTrend?.trend||[];
-  const fd = STATE.result.financialData||{};
-  const epsNow = v(ks.trailingEps)||0;
-  const epsNext = et.find(t=>t.period==="+1y")?.earningsEstimate?.avg?.raw||epsNow;
-  const g5raw = et.find(t=>t.period==="+5y")?.growth?.raw;
-  const g5 = g5raw ? +(g5raw*100).toFixed(1) : 12;
-  const forwardPE = v(STATE.result.summaryDetail?.forwardPE)||20;
-
-  return `
-    <div class="dcf-box">
-      <div class="sec-title">DCF VALUATION — ANALYST EPS ESTIMATES</div>
-      <p style="color:#666;font-size:11px;margin-bottom:14px">Intrinsic value via discounted future earnings. Pre-filled with Yahoo Finance analyst estimates.</p>
-      <div class="dcf-input"><label>EPS TTM (actual)</label><input id="dcfEPS" value="${fmtN(epsNow,2)}" /></div>
-      <div class="dcf-input"><label>Next Year EPS (analyst est.)</label><input id="dcfNextEPS" value="${fmtN(epsNext,2)}" /></div>
-      <div class="dcf-input"><label>EPS Growth Yr 1–5 (%)</label><input id="dcfG1" value="${g5}" /></div>
-      <div class="dcf-input"><label>EPS Growth Yr 6–10 (%)</label><input id="dcfG2" value="${(g5*0.6).toFixed(1)}" /></div>
-      <div class="dcf-input"><label>Terminal Growth Rate (%)</label><input id="dcfGT" value="3" /></div>
-      <div class="dcf-input"><label>Discount Rate / WACC (%)</label><input id="dcfWACC" value="10" /></div>
-      <div class="dcf-input"><label>Exit P/E Multiple</label><input id="dcfPE" value="${fmtN(Math.min(forwardPE,35),1)}" /></div>
-      <button id="calcDCF" onclick="calcDCF()">▶ CALCULATE INTRINSIC VALUE</button>
-      <div id="dcfResult"></div>
-    </div>
-    <p class="note">* Analyst estimates from Yahoo Finance. DCF is simplified — not investment advice.</p>
-  `;
+  const ks=STATE.result.defaultKeyStatistics||{}, sd=STATE.result.summaryDetail||{};
+  const et=STATE.result.earningsTrend?.trend||[];
+  const epsNow=v(ks.trailingEps)||0;
+  const epsNext=et.find(t=>t.period==="+1y")?.earningsEstimate?.avg?.raw||epsNow;
+  const g5raw=et.find(t=>t.period==="+5y")?.growth?.raw;
+  const g5=g5raw?+(g5raw*100).toFixed(1):12;
+  const fpe=v(sd.forwardPE)||20;
+  return `<div class="dcf-box">
+    <div class="sec-title">DCF VALUATION — ANALYST EPS ESTIMATES</div>
+    <p style="color:#666;font-size:11px;margin-bottom:14px">Pre-filled with Yahoo Finance analyst consensus estimates.</p>
+    <div class="dcf-input"><label>EPS TTM (actual)</label><input id="dcfEPS" value="${fmtN(epsNow,2)}" /></div>
+    <div class="dcf-input"><label>Next Year EPS (analyst est.)</label><input id="dcfNextEPS" value="${fmtN(epsNext,2)}" /></div>
+    <div class="dcf-input"><label>EPS Growth Yr 1–5 (%)</label><input id="dcfG1" value="${g5}" /></div>
+    <div class="dcf-input"><label>EPS Growth Yr 6–10 (%)</label><input id="dcfG2" value="${(g5*0.6).toFixed(1)}" /></div>
+    <div class="dcf-input"><label>Terminal Growth Rate (%)</label><input id="dcfGT" value="3" /></div>
+    <div class="dcf-input"><label>Discount Rate / WACC (%)</label><input id="dcfWACC" value="10" /></div>
+    <div class="dcf-input"><label>Exit P/E Multiple</label><input id="dcfPE" value="${fmtN(Math.min(fpe,35),1)}" /></div>
+    <button id="calcDCF" onclick="calcDCF()">▶ CALCULATE INTRINSIC VALUE</button>
+    <div id="dcfResult"></div>
+  </div>
+  <p class="note">* Analyst estimates from Yahoo Finance. Simplified DCF — not investment advice.</p>`;
 }
 
 function calcDCF(){
-  const nEPS = parseFloat(document.getElementById("dcfNextEPS").value)||0;
-  const g1 = parseFloat(document.getElementById("dcfG1").value)/100;
-  const g2 = parseFloat(document.getElementById("dcfG2").value)/100;
-  const wacc = parseFloat(document.getElementById("dcfWACC").value)/100;
-  const exitPE = parseFloat(document.getElementById("dcfPE").value)||20;
-  const price = v(STATE.result.price?.regularMarketPrice)||0;
-
+  const nEPS=parseFloat(document.getElementById("dcfNextEPS").value)||0;
+  const g1=parseFloat(document.getElementById("dcfG1").value)/100;
+  const g2=parseFloat(document.getElementById("dcfG2").value)/100;
+  const wacc=parseFloat(document.getElementById("dcfWACC").value)/100;
+  const exitPE=parseFloat(document.getElementById("dcfPE").value)||20;
+  const price=v(STATE.result.price?.regularMarketPrice)||0;
   let arr=[nEPS];
   for(let i=1;i<5;i++) arr.push(arr[arr.length-1]*(1+g1));
   for(let i=0;i<5;i++) arr.push(arr[arr.length-1]*(1+g2));
-
-  let pv=0;
-  arr.forEach((e,i)=>{ pv+=e/Math.pow(1+wacc,i+1); });
-  const pvT = arr[9]*exitPE/Math.pow(1+wacc,10);
-  const intrinsic = pv+pvT;
-  const upside = ((intrinsic-price)/price)*100;
-  const verdict = upside>25?"UNDERVALUED":upside>5?"FAIRLY VALUED":upside>-10?"SLIGHTLY OVERVALUED":"OVERVALUED";
-  const vc = upside>25?"score-green":upside>5?"score-yellow":"score-red";
-
-  document.getElementById("dcfResult").innerHTML=`
-    <div class="dcf-result">
-      <div style="display:flex;justify-content:space-between;margin-bottom:14px">
-        <div><div style="color:#888;font-size:10px;margin-bottom:2px">INTRINSIC VALUE</div><div class="fair-value">$${fmtN(intrinsic)}</div></div>
-        <div style="text-align:right"><div style="color:#888;font-size:10px;margin-bottom:2px">CURRENT PRICE</div><div style="color:#fff;font-size:20px;font-weight:bold">$${fmtN(price)}</div></div>
-      </div>
-      ${row("Upside / Downside","<span class='"+clr(upside)+"'>"+fmtN(upside)+"%</span>")}
-      ${row("PV of 10yr Earnings","$"+fmtN(pv))}
-      ${row("PV Terminal Value","$"+fmtN(pvT))}
-      <div style="margin-top:12px"><span class="score-badge ${vc}" style="font-size:13px;padding:4px 14px">${verdict}</span></div>
+  let pv=0; arr.forEach((e,i)=>{ pv+=e/Math.pow(1+wacc,i+1); });
+  const pvT=arr[9]*exitPE/Math.pow(1+wacc,10);
+  const intrinsic=pv+pvT;
+  const upside=((intrinsic-price)/price)*100;
+  const verdict=upside>25?"UNDERVALUED":upside>5?"FAIRLY VALUED":upside>-10?"SLIGHTLY OVERVALUED":"OVERVALUED";
+  const vc=upside>25?"score-green":upside>5?"score-yellow":"score-red";
+  document.getElementById("dcfResult").innerHTML=`<div class="dcf-result">
+    <div style="display:flex;justify-content:space-between;margin-bottom:14px">
+      <div><div style="color:#888;font-size:10px;margin-bottom:2px">INTRINSIC VALUE</div><div class="fair-value">$${fmtN(intrinsic)}</div></div>
+      <div style="text-align:right"><div style="color:#888;font-size:10px;margin-bottom:2px">CURRENT PRICE</div><div style="color:#fff;font-size:20px;font-weight:bold">$${fmtN(price)}</div></div>
     </div>
-  `;
-}
-
-function renderTargets(){
-  const fd = STATE.result.financialData||{};
-  const udh = (STATE.result.upgradeDowngradeHistory?.history||[]).slice(0,15);
-  const rt = STATE.result.recommendationTrend?.trend||[];
-  const price = v(STATE.result.price?.regularMarketPrice)||0;
-  const target = v(fd.targetMeanPrice);
-  const ac = a=>{ const l=(a||"").toLowerCase(); return l.includes("buy")||l.includes("outperform")||l.includes("overweight")?"pt-buy":l.includes("sell")||l.includes("underperform")||l.includes("underweight")?"pt-sell":"pt-hold"; };
-
-  return `<div class="grid2">
-    <div>
-      ${sec("CONSENSUS PRICE TARGET",`
-        ${row("Mean Target","$"+fmtN(target),"yellow")}
-        ${row("Median Target","$"+fmtN(v(fd.targetMedianPrice)),"yellow")}
-        ${row("High Target","$"+fmtN(v(fd.targetHighPrice)),"pos")}
-        ${row("Low Target","$"+fmtN(v(fd.targetLowPrice)),"neg")}
-        ${row("Current Price","$"+fmtN(price))}
-        ${row("Upside to Mean",fmtP(target&&price?((target-price)/price)*100:null),target>price?"pos":"neg")}
-        ${row("Upside to High",fmtP(v(fd.targetHighPrice)&&price?(((v(fd.targetHighPrice))-price)/price)*100:null),"pos")}
-        ${row("# Analysts",v(fd.numberOfAnalystOpinions)||"N/A")}
-        ${row("Consensus",(v(fd.recommendationKey)||"N/A").toUpperCase(),(v(fd.recommendationKey)||"").includes("buy")?"pos":"yellow")}
-      `)}
-      ${sec("RECOMMENDATION TREND",
-        rt.slice(0,3).map(t=>`
-          <div style="margin-bottom:8px">
-            <div style="color:#555;font-size:10px;margin-bottom:3px">${t.period}</div>
-            <div style="display:flex;gap:10px;font-size:11px;flex-wrap:wrap">
-              <span class="pos">Strong Buy: ${t.strongBuy}</span>
-              <span class="pos">Buy: ${t.buy}</span>
-              <span class="yellow">Hold: ${t.hold}</span>
-              <span class="neg">Sell: ${t.sell}</span>
-              <span class="neg">Strong Sell: ${t.strongSell}</span>
-            </div>
-          </div>
-        `).join("")||"<div style='color:#555'>No data available.</div>"
-      )}
-    </div>
-    <div>
-      ${sec("RECENT UPGRADES / DOWNGRADES",
-        udh.length?udh.map(u=>`
-          <div class="pt-item">
-            <span class="pt-firm">${u.firm||"Unknown"}</span>
-            <span style="display:flex;gap:6px;align-items:center">
-              <span style="color:#444;font-size:10px">${u.epochGradeDate?new Date(u.epochGradeDate*1000).toISOString().slice(0,10):""}</span>
-              <span class="pt-action ${ac(u.toGrade)}">${u.toGrade||u.action||""}</span>
-            </span>
-          </div>
-        `).join(""):"<div style='color:#555;padding:12px'>No recent data.</div>"
-      )}
-    </div>
+    ${row("Upside / Downside","<span class='"+clr(upside)+"'>"+fmtN(upside)+"%</span>")}
+    ${row("PV of 10yr Earnings","$"+fmtN(pv))}
+    ${row("PV Terminal Value","$"+fmtN(pvT))}
+    <div style="margin-top:12px"><span class="score-badge ${vc}" style="font-size:13px;padding:4px 14px">${verdict}</span></div>
   </div>`;
 }
 
+function renderTargets(){
+  const fd=STATE.result.financialData||{};
+  const udh=(STATE.result.upgradeDowngradeHistory?.history||[]).slice(0,15);
+  const rt=STATE.result.recommendationTrend?.trend||[];
+  const price=v(STATE.result.price?.regularMarketPrice)||0;
+  const target=v(fd.targetMeanPrice);
+  const ac=a=>{ const l=(a||"").toLowerCase(); return l.includes("buy")||l.includes("outperform")||l.includes("overweight")?"pt-buy":l.includes("sell")||l.includes("underperform")||l.includes("underweight")?"pt-sell":"pt-hold"; };
+  return `<div class="grid2"><div>
+    ${sec("CONSENSUS PRICE TARGET",`
+      ${row("Mean Target","$"+fmtN(target),"yellow")}
+      ${row("Median Target","$"+fmtN(v(fd.targetMedianPrice)),"yellow")}
+      ${row("High Target","$"+fmtN(v(fd.targetHighPrice)),"pos")}
+      ${row("Low Target","$"+fmtN(v(fd.targetLowPrice)),"neg")}
+      ${row("Current Price","$"+fmtN(price))}
+      ${row("Upside to Mean",fmtP(target&&price?((target-price)/price)*100:null),target>price?"pos":"neg")}
+      ${row("# Analysts",v(fd.numberOfAnalystOpinions)||"N/A")}
+      ${row("Consensus",(v(fd.recommendationKey)||"N/A").toUpperCase(),(v(fd.recommendationKey)||"").includes("buy")?"pos":"yellow")}
+    `)}
+    ${sec("RECOMMENDATION TREND",
+      rt.slice(0,3).map(t=>`<div style="margin-bottom:8px">
+        <div style="color:#555;font-size:10px;margin-bottom:3px">${t.period}</div>
+        <div style="display:flex;gap:10px;font-size:11px;flex-wrap:wrap">
+          <span class="pos">Strong Buy: ${t.strongBuy}</span>
+          <span class="pos">Buy: ${t.buy}</span>
+          <span class="yellow">Hold: ${t.hold}</span>
+          <span class="neg">Sell: ${t.sell}</span>
+          <span class="neg">Strong Sell: ${t.strongSell}</span>
+        </div></div>`).join("")||"<div style='color:#555'>No data.</div>"
+    )}
+  </div><div>
+    ${sec("RECENT UPGRADES / DOWNGRADES",
+      udh.length?udh.map(u=>`<div class="pt-item">
+        <span class="pt-firm">${u.firm||"Unknown"}</span>
+        <span style="display:flex;gap:6px;align-items:center">
+          <span style="color:#444;font-size:10px">${u.epochGradeDate?new Date(u.epochGradeDate*1000).toISOString().slice(0,10):""}</span>
+          <span class="pt-action ${ac(u.toGrade)}">${u.toGrade||u.action||""}</span>
+        </span></div>`).join(""):"<div style='color:#555;padding:12px'>No recent data.</div>"
+    )}
+  </div></div>`;
+}
+
 function renderNews(){
-  const news = STATE.newsData?.news||[];
+  const news=STATE.newsData?.news||[];
   if(!news.length) return `<div class="error">No news found.</div>`;
-  return sec("LATEST NEWS", news.map(n=>`
-    <div class="news-item">
-      <div class="news-date">${n.providerPublishTime?new Date(n.providerPublishTime*1000).toISOString().slice(0,10):""}</div>
-      <div class="news-body">
-        <a href="${n.link}" target="_blank">${n.title}</a>
-        <div class="news-meta">${n.publisher||""}</div>
-      </div>
-    </div>
-  `).join(""));
+  return sec("LATEST NEWS", news.map(n=>`<div class="news-item">
+    <div class="news-date">${n.providerPublishTime?new Date(n.providerPublishTime*1000).toISOString().slice(0,10):""}</div>
+    <div class="news-body">
+      <a href="${n.link}" target="_blank">${n.title}</a>
+      <div class="news-meta">${n.publisher||""}</div>
+    </div></div>`).join(""));
 }
 
 function exportExcel(){
   if(!STATE.result) return;
-  const wb = XLSX.utils.book_new();
-  const fd = STATE.result.financialData||{};
-  const sd = STATE.result.summaryDetail||{};
-  const ks = STATE.result.defaultKeyStatistics||{};
-  const pr = STATE.result.price||{};
-
+  const wb=XLSX.utils.book_new();
+  const fd=STATE.result.financialData||{}, sd=STATE.result.summaryDetail||{};
+  const ks=STATE.result.defaultKeyStatistics||{}, pr=STATE.result.price||{};
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([
     ["METRIC","VALUE"],
     ["Company",v(pr.longName)],["Sector",STATE.result.assetProfile?.sector],
     ["Market Cap",v(pr.marketCap)],["Revenue TTM",v(fd.totalRevenue)],
     ["EBITDA",v(fd.ebitda)],["Free Cash Flow",v(fd.freeCashflow)],
     ["EPS TTM",v(ks.trailingEps)],["P/E TTM",v(sd.trailingPE)],
-    ["Forward P/E",v(sd.forwardPE)],["P/S",v(ks.priceToSalesTrailing12Months)],
-    ["P/B",v(ks.priceToBook)],["EV/EBITDA",v(ks.enterpriseToEbitda)],
+    ["Forward P/E",v(sd.forwardPE)],["P/B",v(ks.priceToBook)],
+    ["EV/EBITDA",v(ks.enterpriseToEbitda)],
     ["Operating Margin",(v(fd.operatingMargins)||0)*100+"%"],
     ["Net Margin",(v(fd.profitMargins)||0)*100+"%"],
     ["ROE",(v(fd.returnOnEquity)||0)*100+"%"],
-    ["ROA",(v(fd.returnOnAssets)||0)*100+"%"],
     ["Debt/Equity",v(fd.debtToEquity)],
     ["Analyst Target",v(fd.targetMeanPrice)],
     ["Recommendation",v(fd.recommendationKey)],
   ]), "Overview & Ratios");
-
-  const inc = STATE.result.incomeStatementHistory?.incomeStatementHistory||[];
+  const inc=STATE.result.incomeStatementHistory?.incomeStatementHistory||[];
   if(inc.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([
     ["Metric",...inc.slice(0,4).map(r=>r.endDate?.fmt||"")],
-    ["Total Revenue",...inc.slice(0,4).map(r=>v(r.totalRevenue))],
+    ["Revenue",...inc.slice(0,4).map(r=>v(r.totalRevenue))],
     ["Gross Profit",...inc.slice(0,4).map(r=>v(r.grossProfit))],
     ["Operating Income",...inc.slice(0,4).map(r=>v(r.operatingIncome))],
     ["Net Income",...inc.slice(0,4).map(r=>v(r.netIncome))],
     ["EPS Diluted",...inc.slice(0,4).map(r=>v(r.dilutedEPS))],
   ]), "Income Statement");
-
-  const bal = STATE.result.balanceSheetHistory?.balanceSheetStatements||[];
+  const bal=STATE.result.balanceSheetHistory?.balanceSheetStatements||[];
   if(bal.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([
     ["Metric",...bal.slice(0,4).map(r=>r.endDate?.fmt||"")],
     ["Total Assets",...bal.slice(0,4).map(r=>v(r.totalAssets))],
     ["Total Liabilities",...bal.slice(0,4).map(r=>v(r.totalLiab))],
-    ["Stockholder Equity",...bal.slice(0,4).map(r=>v(r.totalStockholderEquity))],
+    ["Equity",...bal.slice(0,4).map(r=>v(r.totalStockholderEquity))],
     ["Cash",...bal.slice(0,4).map(r=>v(r.cash))],
     ["Total Debt",...bal.slice(0,4).map(r=>v(r.shortLongTermDebt))],
   ]), "Balance Sheet");
-
-  const cf = STATE.result.cashflowStatementHistory?.cashflowStatements||[];
+  const cf=STATE.result.cashflowStatementHistory?.cashflowStatements||[];
   if(cf.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([
     ["Metric",...cf.slice(0,4).map(r=>r.endDate?.fmt||"")],
     ["Operating CF",...cf.slice(0,4).map(r=>v(r.totalCashFromOperatingActivities))],
     ["Capex",...cf.slice(0,4).map(r=>v(r.capitalExpenditures))],
     ["Free Cash Flow",...cf.slice(0,4).map(r=>v(r.freeCashFlow))],
     ["Dividends Paid",...cf.slice(0,4).map(r=>v(r.dividendsPaid))],
-    ["Buybacks",...cf.slice(0,4).map(r=>v(r.repurchaseOfStock))],
   ]), "Cash Flow");
-
-  XLSX.writeFile(wb, `${STATE.sym}_${new Date().toISOString().slice(0,10)}.xlsx`);
+  XLSX.writeFile(wb,`${STATE.sym}_${new Date().toISOString().slice(0,10)}.xlsx`);
 }
 
 loadTicker();
